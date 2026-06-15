@@ -6,7 +6,7 @@ WORKDIR /shkeeper
 
 COPY ./walletnotify.sh .
 
-ARG FIRO_VERSION=0.14.15.0
+ARG FIRO_VERSION=0.14.16.1
 ARG FIRO_PASSWORD=shkeeper
 ARG FIRO_USERNAME=shkeeper
 
