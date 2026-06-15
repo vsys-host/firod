@@ -11,7 +11,7 @@ ARG FIRO_PASSWORD=shkeeper
 ARG FIRO_USERNAME=shkeeper
 
 RUN chmod +x walletnotify.sh \
-    && curl -L https://downloads.sourceforge.net/project/firoorg/firo-${FIRO_VERSION}-linux64.tar.gz -o firo.tar.gz \
+    curl -L https://github.com/firoorg/firo/releases/download/v${FIRO_VERSION}/firo-${FIRO_VERSION}-linux64.tar.gz -o firo.tar.gz \ 
     && tar -xzvf firo.tar.gz \
     && cp firo-*/bin/firod firo-*/bin/firo-cli . \
     && rm -rf firo.tar.gz firo-*
